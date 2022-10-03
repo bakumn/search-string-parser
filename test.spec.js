@@ -18,8 +18,8 @@ test('externalId search string', async t => {
 
 test('valid search url string', async t => {
   t.deepEqual(
-    await searchStringParser('https://m.tb.cn/h.4s4T1m5?sm=6fd301'),
-    { marketplace: 'taobao', externalId: '568804690189' }
+    await searchStringParser('https://m.tb.cn/h.Ud7Usq8?tk=60wP2CvDHRT'),
+    { marketplace: 'taobao', externalId: '595884165116' }
   )
   t.deepEqual(
     await searchStringParser('https://qr.1688.com/share.html?secret=0H9TOj6I'),
@@ -38,8 +38,8 @@ test('valid search url string', async t => {
     { marketplace: '1688', externalId: '624139032536' }
   )
   t.deepEqual(
-    await searchStringParser('2.0啊CrATXeu9PaK， https://m.tb.cn/h.4JGyJuZ?sm=71c67e 卡通可爱煤球红米k30手机壳全包支架redmi推拉镜头肤感防摔红米note8外壳硅胶创意红米note8pro保护套女款'),
-    { marketplace: 'taobao', externalId: '640103352460' }
+    await searchStringParser('【淘宝】https://m.tb.cn/h.Ud7Usq8?tk=60wP2CvDHRT CZ3457 「半挂吊大小货车行车记录仪前后双录倒车影像一体机高清夜视12V24V」点击链接直接打开 或者 淘宝搜索直接打开'),
+    { marketplace: 'taobao', externalId: '595884165116' }
   )
   t.deepEqual(
     await searchStringParser('https://detail.tmall.com/item.htm?id=595954825798&ft=t'),
